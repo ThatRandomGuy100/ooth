@@ -4,9 +4,12 @@ import { Resend } from "resend";
 
 import { prisma } from "@/lib/prisma";
 
-// All form details are emailed here on every submission, sent from the
-// same Resend-verified address.
-const APPLICATIONS_EMAIL = "Info@primecapusa.com";
+// All form details are emailed to EMAIL_TO on every submission. The sender
+// must be on a Resend-verified domain — switch EMAIL_FROM to
+// "Primemeal <Info@primecapusa.com>" once that domain's DNS is verified.
+const EMAIL_TO = process.env.EMAIL_TO ?? "Info@primecapusa.com";
+const EMAIL_FROM =
+  process.env.EMAIL_FROM ?? "Primemeal <info@greatcareathome.com>";
 
 const NEED_LABELS: Record<string, string> = {
   food: "Food & Nutrition Assistance",
@@ -57,8 +60,8 @@ async function sendApplicationEmail(input: ApplicationInput) {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
   await resend.emails.send({
-    from: `Primemeal <${APPLICATIONS_EMAIL}>`,
-    to: APPLICATIONS_EMAIL,
+    from: EMAIL_FROM,
+    to: EMAIL_TO,
     replyTo: input.email,
     subject: `New application — ${input.firstName} ${input.lastName}`,
     html,
