@@ -1,12 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import { ArrowRight, CircleCheck, Clock } from "lucide-react";
 
 import { useLanguage } from "@/components/language-provider";
+import { QualifyModal } from "@/components/qualify-modal";
 import { Reveal } from "@/components/reveal";
 
 export function QualifySection() {
   const { t } = useLanguage();
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <section
@@ -61,8 +64,8 @@ export function QualifySection() {
         </div>
 
         {/* Right column — application card */}
-        <Reveal delay={250} className="h-full">
-          <div className="flex h-full flex-col justify-center rounded-2xl bg-white p-8 shadow-[0_24px_60px_rgba(31,39,51,0.10)] transition-shadow duration-300 hover:shadow-[0_28px_70px_rgba(31,39,51,0.16)] sm:p-10">
+        <Reveal delay={250}>
+          <div className="rounded-2xl bg-white p-8 shadow-[0_24px_60px_rgba(31,39,51,0.10)] transition-shadow duration-300 hover:shadow-[0_28px_70px_rgba(31,39,51,0.16)] sm:p-10">
             <div className="flex size-12 items-center justify-center rounded-full bg-[#e3edf8]">
               <CircleCheck className="size-6 text-[#2668c5]" />
             </div>
@@ -84,6 +87,7 @@ export function QualifySection() {
 
             <button
               type="button"
+              onClick={() => setModalOpen(true)}
               className="group mt-6 flex w-full items-center justify-center gap-2 rounded-lg bg-[#16181d] px-6 py-4 text-[15px] font-medium text-white transition-colors hover:bg-black"
             >
               {t.qualify.cta}
@@ -96,6 +100,8 @@ export function QualifySection() {
           </div>
         </Reveal>
       </div>
+
+      <QualifyModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </section>
   );
 }

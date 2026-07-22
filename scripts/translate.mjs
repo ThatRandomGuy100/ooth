@@ -12,6 +12,7 @@ const KEEP_VERBATIM = new Set([
   "program.stat2Value",
   "footer.email",
   "footer.site",
+  "form.medicaidPlaceholder",
 ]);
 
 const dir = path.join(process.cwd(), "src", "lib");
