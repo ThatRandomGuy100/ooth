@@ -7,5 +7,14 @@
   },
   "header": {
     "cta": "Ver si califico"
+  },
+  "hero": {
+    "eyebrow": "Red de atención social de Nueva York",
+    "titleLine1": "Comidas nutritivas, entregadas.",
+    "titleLine2": "Cubierto por Medicaid.",
+    "description": "MealCare by Renurg Health lleva comidas listas para comer y con apoyo médico a las puertas de los neoyorquinos elegibles, sin costo alguno, a través de la Red de Atención Social de Exención de Medicaid 1115 de Nueva York.",
+    "disclaimer": "MealCare no es una red de atención social ni un proveedor de SCN. Operamos como un proveedor aprobado que se encarga de la logística, la preparación y la entrega de comidas en coordinación con los proveedores de SCN.",
+    "ctaPrimary": "Mira si calificas",
+    "ctaSecondary": "Ver detalles del programa"
   }
 }
