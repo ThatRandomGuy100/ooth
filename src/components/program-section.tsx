@@ -67,9 +67,9 @@ export function ProgramSection() {
   return (
     <section
       id="program"
-      className="bg-[#f7f8fa] [font-family:var(--font-poppins)]"
+      className="flex min-h-[calc(100vh-4rem)] snap-start bg-[#f7f8fa] [font-family:var(--font-poppins)]"
     >
-      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+      <div className="mx-auto flex w-full max-w-7xl flex-col justify-center px-4 py-14 sm:px-6 lg:px-8">
         <Reveal>
           <p className="text-center text-[12px] font-medium uppercase tracking-[0.2em] text-[#6d7681]">
             {t.program.eyebrow}

@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${playfair.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${playfair.variable} h-full snap-y snap-mandatory scroll-pt-16 scroll-smooth antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <LanguageProvider>

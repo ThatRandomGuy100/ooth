@@ -9,7 +9,7 @@ export function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative overflow-hidden border-b border-slate-200 bg-white [font-family:var(--font-poppins)]">
+    <section className="relative flex min-h-[calc(100vh-4rem)] snap-start items-center overflow-hidden border-b border-slate-200 bg-white [font-family:var(--font-poppins)]">
       {/* Background photo, anchored right, fading into white on its left and bottom */}
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] md:block">
         <Reveal y={0} delay={200} className="h-full w-full">
@@ -25,8 +25,8 @@ export function Hero() {
         </Reveal>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl py-20 lg:py-28">
+      <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl py-16 lg:py-20">
           <Reveal>
             <p className="text-[13px] font-medium uppercase tracking-[0.2em] text-[#4778b3]">
               {t.hero.eyebrow}
