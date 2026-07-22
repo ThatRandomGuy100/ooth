@@ -22,10 +22,8 @@
     "titleLine1": "Comida de verdad,",
     "titleLine2": "enviado a casa.",
     "description": "MealCare entrega comidas nutritivas y listas para comer a los neoyorquinos que califican bajo la exención de Medicaid 1115 del estado, parte de la Red de Atención Social (SCN, por sus siglas en inglés) que conecta a los miembros de Medicaid con apoyo alimentario y nutricional.",
-    "badgeDeliveriesLine1": "Semanalmente",
-    "badgeDeliveriesLine2": "entregas",
-    "badgeMealsLine1": "3 comidas",
-    "badgeMealsLine2": "los 7 dias",
+    "badgeDeliveries": "Entregas semanales",
+    "badgeMeals": "3 comidas los 7 días",
     "stat1Value": "$0",
     "stat1Label": "De su bolsillo",
     "stat2Value": "NY",
@@ -67,6 +65,6 @@
     "site": "primemeal.com"
   },
   "whatsapp": {
-    "label": "Envíanos whatsapp"
+    "label": "Envíanos WhatsApp"
   }
 }

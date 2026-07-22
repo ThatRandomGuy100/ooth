@@ -27,14 +27,19 @@ const SEAL_PATH = (() => {
 })();
 
 function SealBadge({
-  line1,
-  line2,
+  label,
   className = "",
 }: {
-  line1: string;
-  line2: string;
+  label: string;
   className?: string;
 }) {
+  // Split the (translated) phrase across two lines: first half of the words
+  // on top, remainder below — "Weekly deliveries" → "Weekly" / "deliveries",
+  // "3 meals all 7 days" → "3 meals" / "all 7 days".
+  const words = label.split(" ");
+  const split = Math.max(1, Math.floor(words.length / 2));
+  const line1 = words.slice(0, split).join(" ");
+  const line2 = words.slice(split).join(" ");
   return (
     <motion.div
       whileHover={{ scale: 1.12 }}
@@ -86,8 +91,7 @@ export function ProgramSection() {
                 className="w-full rounded-3xl object-cover shadow-[0_24px_60px_rgba(31,39,51,0.16)]"
               />
               <SealBadge
-                line1={t.program.badgeDeliveriesLine1}
-                line2={t.program.badgeDeliveriesLine2}
+                label={t.program.badgeDeliveries}
                 className="absolute -left-7 -top-7 size-28"
               />
             </div>
@@ -102,8 +106,7 @@ export function ProgramSection() {
                   <span className="block">{t.program.titleLine2}</span>
                 </h2>
                 <SealBadge
-                  line1={t.program.badgeMealsLine1}
-                  line2={t.program.badgeMealsLine2}
+                  label={t.program.badgeMeals}
                   className="absolute -top-2 right-0 size-28"
                 />
               </div>

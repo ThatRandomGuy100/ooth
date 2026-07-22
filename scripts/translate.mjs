@@ -42,9 +42,14 @@ async function translate(text, to) {
   const data = await res.json();
   const translated = data[0].map((segment) => segment[0]).join("");
   // Mirror the source's leading capitalization (the API sometimes lowercases).
-  return /^[A-Z]/.test(text)
+  let out = /^[A-Z]/.test(text)
     ? translated.charAt(0).toUpperCase() + translated.slice(1)
     : translated;
+  // Restore brand-name casing the API tends to mangle.
+  for (const brand of ["WhatsApp", "Medicaid", "Primemeal"]) {
+    out = out.replace(new RegExp(brand, "gi"), brand);
+  }
+  return out;
 }
 
 const entries = flatten(en);
