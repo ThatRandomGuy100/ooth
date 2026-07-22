@@ -6,6 +6,9 @@ import path from "node:path";
 
 const TARGET_LANGS = ["es"];
 
+// Key paths copied verbatim into every language (symbols, abbreviations, stats).
+const KEEP_VERBATIM = new Set(["program.stat1Value", "program.stat2Value"]);
+
 const dir = path.join(process.cwd(), "src", "lib");
 const en = JSON.parse(readFileSync(path.join(dir, "i18n.en.json"), "utf8"));
 
@@ -44,7 +47,9 @@ const entries = flatten(en);
 for (const lang of TARGET_LANGS) {
   const out = {};
   for (const [segments, text] of entries) {
-    const translated = await translate(text, lang);
+    const translated = KEEP_VERBATIM.has(segments.join("."))
+      ? text
+      : await translate(text, lang);
     setDeep(out, segments, translated);
     console.log(`[${lang}] ${segments.join(".")}: "${text}" -> "${translated}"`);
   }

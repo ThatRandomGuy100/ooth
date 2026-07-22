@@ -16,5 +16,22 @@
     "disclaimer": "MealCare no es una red de atención social ni un proveedor de SCN. Operamos como un proveedor aprobado que se encarga de la logística, la preparación y la entrega de comidas en coordinación con los proveedores de SCN.",
     "ctaPrimary": "Mira si calificas",
     "ctaSecondary": "Ver detalles del programa"
+  },
+  "program": {
+    "eyebrow": "El programa",
+    "titleLine1": "Comida de verdad,",
+    "titleLine2": "enviado a casa.",
+    "description": "MealCare entrega comidas nutritivas y listas para comer a los neoyorquinos que califican bajo la exención de Medicaid 1115 del estado, parte de la Red de Atención Social (SCN, por sus siglas en inglés) que conecta a los miembros de Medicaid con apoyo alimentario y nutricional.",
+    "badgeDeliveriesLine1": "Semanalmente",
+    "badgeDeliveriesLine2": "entregas",
+    "badgeMealsLine1": "3 comidas",
+    "badgeMealsLine2": "los 7 dias",
+    "stat1Value": "$0",
+    "stat1Label": "De su bolsillo",
+    "stat2Value": "NY",
+    "stat2Label": "Medicaid financiado"
+  },
+  "whatsapp": {
+    "label": "Envíanos whatsapp"
   }
 }

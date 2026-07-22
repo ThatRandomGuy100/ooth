@@ -16,5 +16,22 @@
     "disclaimer": "MealCare is not a Social Care Network or SCN provider. We operate as an approved vendor handling meal logistics, preparation, and delivery in coordination with SCN providers.",
     "ctaPrimary": "See if you qualify",
     "ctaSecondary": "View program details"
+  },
+  "program": {
+    "eyebrow": "The Program",
+    "titleLine1": "Real food,",
+    "titleLine2": "sent home.",
+    "description": "MealCare delivers nutritious, ready-to-eat meals to New Yorkers who qualify under the state's 1115 Medicaid Waiver — part of the Social Care Network (SCN) connecting Medicaid members to food and nutrition support.",
+    "badgeDeliveriesLine1": "Weekly",
+    "badgeDeliveriesLine2": "deliveries",
+    "badgeMealsLine1": "3 meals",
+    "badgeMealsLine2": "all 7 days",
+    "stat1Value": "$0",
+    "stat1Label": "Out of pocket",
+    "stat2Value": "NY",
+    "stat2Label": "Medicaid funded"
+  },
+  "whatsapp": {
+    "label": "WhatsApp us"
   }
 }

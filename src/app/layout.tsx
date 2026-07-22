@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { LanguageProvider } from "@/components/language-provider";
 import { SiteHeader } from "@/components/site-header";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,6 +48,7 @@ export default function RootLayout({
         <LanguageProvider>
           <SiteHeader />
           {children}
+          <WhatsAppButton />
         </LanguageProvider>
       </body>
     </html>
