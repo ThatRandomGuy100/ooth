@@ -1,6 +1,72 @@
 "use server";
 
+import { Resend } from "resend";
+
 import { prisma } from "@/lib/prisma";
+
+// All form details are emailed to EMAIL_TO on every submission. The sender
+// must be on a Resend-verified domain — switch EMAIL_FROM to
+// "Primemeal <Info@primecapusa.com>" once that domain's DNS is verified.
+const EMAIL_TO = process.env.EMAIL_TO ?? "Info@primecapusa.com";
+const EMAIL_FROM =
+  process.env.EMAIL_FROM ?? "Primemeal <info@greatcareathome.com>";
+
+const NEED_LABELS: Record<string, string> = {
+  food: "Food & Nutrition Assistance",
+  housing: "Housing Support",
+  transport: "Transportation",
+  employment: "Employment & Education",
+  safety: "Personal Safety",
+  other: "Other Social Needs",
+};
+
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+async function sendApplicationEmail(input: ApplicationInput) {
+  if (!process.env.RESEND_API_KEY) {
+    console.warn("RESEND_API_KEY not set — skipping application email.");
+    return;
+  }
+  const rows: [string, string][] = [
+    ["First name", input.firstName],
+    ["Last name", input.lastName],
+    ["Email address", input.email],
+    ["Phone number", input.phone],
+    ["Date of birth", input.dateOfBirth],
+    ["County", input.county],
+    ["Medicaid ID (CIN)", input.medicaidId],
+    ["Health plan", input.healthPlan],
+    ["Help needed", input.needs.map((n) => NEED_LABELS[n] ?? n).join(", ")],
+    ["Situation", input.situation],
+    ["Consent given", input.consent ? "Yes" : "No"],
+    ["Form language", input.language === "es" ? "Spanish" : "English"],
+  ];
+  const html = `
+    <h2>New qualification application</h2>
+    <table cellpadding="6" style="border-collapse:collapse;font-family:sans-serif;font-size:14px">
+      ${rows
+        .map(
+          ([label, value]) =>
+            `<tr><td style="border:1px solid #ddd;font-weight:bold">${label}</td><td style="border:1px solid #ddd">${escapeHtml(value)}</td></tr>`
+        )
+        .join("")}
+    </table>`;
+
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  await resend.emails.send({
+    from: EMAIL_FROM,
+    to: EMAIL_TO,
+    replyTo: input.email,
+    subject: `New application — ${input.firstName} ${input.lastName}`,
+    html,
+  });
+}
 
 export type ApplicationInput = {
   firstName: string;
@@ -44,22 +110,41 @@ export async function submitApplication(
     return { ok: false, error: "invalid" };
   }
 
+  const clean: ApplicationInput = {
+    ...input,
+    firstName: input.firstName.trim(),
+    lastName: input.lastName.trim(),
+    email: input.email.trim(),
+    phone: input.phone.trim(),
+    medicaidId: input.medicaidId.trim(),
+    healthPlan: input.healthPlan.trim(),
+    situation: input.situation.trim(),
+    language: input.language === "es" ? "es" : "en",
+  };
+
   await prisma.application.create({
     data: {
-      firstName: input.firstName.trim(),
-      lastName: input.lastName.trim(),
-      email: input.email.trim(),
-      phone: input.phone.trim(),
+      firstName: clean.firstName,
+      lastName: clean.lastName,
+      email: clean.email,
+      phone: clean.phone,
       dateOfBirth,
-      county: input.county,
-      medicaidId: input.medicaidId.trim(),
-      healthPlan: input.healthPlan.trim(),
-      needs: input.needs,
-      situation: input.situation.trim(),
-      consent: input.consent,
-      language: input.language === "es" ? "es" : "en",
+      county: clean.county,
+      medicaidId: clean.medicaidId,
+      healthPlan: clean.healthPlan,
+      needs: clean.needs,
+      situation: clean.situation,
+      consent: clean.consent,
+      language: clean.language,
     },
   });
+
+  // The submission is already saved — don't fail it if the email bounces.
+  try {
+    await sendApplicationEmail(clean);
+  } catch (error) {
+    console.error("Failed to send application email:", error);
+  }
 
   return { ok: true };
 }

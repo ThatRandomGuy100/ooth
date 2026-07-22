@@ -93,6 +93,7 @@
     "needEmployment": "Employment & Education",
     "needSafety": "Personal Safety",
     "needOther": "Other Social Needs",
+    "needsRequired": "Please select at least one option.",
     "sectionAdditional": "Additional information",
     "situation": "Tell us more about your situation",
     "situationPlaceholder": "Share any additional details that would help us understand your needs…",
