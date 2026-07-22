@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "motion/react";
+
 import { useLanguage } from "@/components/language-provider";
 import { Reveal } from "@/components/reveal";
 
@@ -34,15 +36,28 @@ function SealBadge({
   className?: string;
 }) {
   return (
-    <div className={`relative ${className}`}>
-      <svg viewBox="0 0 100 100" className="h-full w-full" aria-hidden="true">
-        <path d={SEAL_PATH} fill="#2b62c4" />
-      </svg>
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-        <span className="text-[13px] font-semibold leading-tight">{line1}</span>
-        <span className="text-[11px] font-medium leading-tight">{line2}</span>
+    <motion.div
+      whileHover={{ scale: 1.12 }}
+      transition={{ type: "spring", stiffness: 260, damping: 18 }}
+      className={className}
+    >
+      <div className="relative h-full w-full">
+        {/* The scalloped seal slowly rotates behind the (static) label. */}
+        <svg
+          viewBox="0 0 100 100"
+          className="h-full w-full animate-[spin_24s_linear_infinite]"
+          aria-hidden="true"
+        >
+          <path d={SEAL_PATH} fill="#2b62c4" />
+        </svg>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+          <span className="text-[13px] font-semibold leading-tight">
+            {line1}
+          </span>
+          <span className="text-[11px] font-medium leading-tight">{line2}</span>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
