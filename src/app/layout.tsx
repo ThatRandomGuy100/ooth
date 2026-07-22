@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { LanguageProvider } from "@/components/language-provider";
 import { SiteHeader } from "@/components/site-header";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,12 +42,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${playfair.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${playfair.variable} h-full snap-y snap-mandatory scroll-pt-16 scroll-smooth antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <LanguageProvider>
           <SiteHeader />
           {children}
+          <WhatsAppButton />
         </LanguageProvider>
       </body>
     </html>

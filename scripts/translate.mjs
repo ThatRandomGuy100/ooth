@@ -6,6 +6,15 @@ import path from "node:path";
 
 const TARGET_LANGS = ["es"];
 
+// Key paths copied verbatim into every language (symbols, abbreviations, stats).
+const KEEP_VERBATIM = new Set([
+  "program.stat1Value",
+  "program.stat2Value",
+  "footer.email",
+  "footer.site",
+  "form.medicaidPlaceholder",
+]);
+
 const dir = path.join(process.cwd(), "src", "lib");
 const en = JSON.parse(readFileSync(path.join(dir, "i18n.en.json"), "utf8"));
 
@@ -34,9 +43,14 @@ async function translate(text, to) {
   const data = await res.json();
   const translated = data[0].map((segment) => segment[0]).join("");
   // Mirror the source's leading capitalization (the API sometimes lowercases).
-  return /^[A-Z]/.test(text)
+  let out = /^[A-Z]/.test(text)
     ? translated.charAt(0).toUpperCase() + translated.slice(1)
     : translated;
+  // Restore brand-name casing the API tends to mangle.
+  for (const brand of ["WhatsApp", "Medicaid", "Primemeal"]) {
+    out = out.replace(new RegExp(brand, "gi"), brand);
+  }
+  return out;
 }
 
 const entries = flatten(en);
@@ -44,7 +58,9 @@ const entries = flatten(en);
 for (const lang of TARGET_LANGS) {
   const out = {};
   for (const [segments, text] of entries) {
-    const translated = await translate(text, lang);
+    const translated = KEEP_VERBATIM.has(segments.join("."))
+      ? text
+      : await translate(text, lang);
     setDeep(out, segments, translated);
     console.log(`[${lang}] ${segments.join(".")}: "${text}" -> "${translated}"`);
   }
