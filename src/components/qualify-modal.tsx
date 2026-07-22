@@ -79,6 +79,7 @@ export function QualifyModal({
   const [status, setStatus] = useState<
     "idle" | "submitting" | "success" | "error"
   >("idle");
+  const [needsError, setNeedsError] = useState(false);
 
   // Close on Escape; lock body scroll while open.
   useEffect(() => {
@@ -101,6 +102,13 @@ export function QualifyModal({
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
+    // Every field is compulsory — the needs checkboxes can't be enforced
+    // with a plain `required` attribute, so check them here.
+    if (data.getAll("needs").length === 0) {
+      setNeedsError(true);
+      return;
+    }
+    setNeedsError(false);
     setStatus("submitting");
     const result = await submitApplication({
       firstName: String(data.get("firstName") ?? ""),
@@ -257,12 +265,18 @@ export function QualifyModal({
                             type="checkbox"
                             name="needs"
                             value={need}
+                            onChange={() => setNeedsError(false)}
                             className="size-4 accent-[#2668c5]"
                           />
                           {t.form[NEED_LABEL_KEYS[need]]}
                         </label>
                       ))}
                     </div>
+                    {needsError && (
+                      <p className="mt-3 text-[14px] text-red-600">
+                        {t.form.needsRequired}
+                      </p>
+                    )}
                   </div>
 
                   {/* Additional information */}

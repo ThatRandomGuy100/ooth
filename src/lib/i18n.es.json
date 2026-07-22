@@ -93,6 +93,7 @@
     "needEmployment": "Empleo y educación",
     "needSafety": "Seguridad personal",
     "needOther": "Otras necesidades sociales",
+    "needsRequired": "Por favor seleccione al menos una opción.",
     "sectionAdditional": "Información adicional",
     "situation": "Cuéntanos más sobre tu situación",
     "situationPlaceholder": "Comparta cualquier detalle adicional que nos ayude a comprender sus necesidades...",
