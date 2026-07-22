@@ -54,6 +54,22 @@
     "step3Title": "Meals begin",
     "step3Body": "Once approved, meals start arriving at your door on a consistent delivery schedule."
   },
+  "qualify": {
+    "eyebrow": "Contact",
+    "titleLine1": "See if you qualify.",
+    "titleLine2": "We'll handle the rest.",
+    "description": "Tell us a little about yourself. A member of the Primemeal team will reach out to confirm your details and guide you through the next steps.",
+    "stepsTitle": "What happens next",
+    "step1": "You send a quick message with your details.",
+    "step2": "We follow up to verify eligibility and coordinate your SCN referral.",
+    "step3": "Meals begin once approved — weekly, at no cost.",
+    "cardTitle": "See if you qualify",
+    "cardBody": "Share a few details and our team will verify your eligibility and coordinate your SCN referral.",
+    "timeNote": "Only takes",
+    "timeStrong": "less than a minute",
+    "cta": "Start my secure & confidential application",
+    "privacy": "Private and secure. We only use this information to coordinate your meal support."
+  },
   "footer": {
     "description": "Primemeal is an approved vendor partnering with Social Care Networks to facilitate Home-Delivered Meals under New York's 1115 Medicaid Waiver. Primemeal is not an SCN provider.",
     "contact": "Contact",

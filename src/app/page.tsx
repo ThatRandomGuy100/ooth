@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero";
 import { HowItWorksSection } from "@/components/how-it-works-section";
 import { ProgramSection } from "@/components/program-section";
+import { QualifySection } from "@/components/qualify-section";
 import { SiteFooter } from "@/components/site-footer";
 import { WhoQualifiesSection } from "@/components/who-qualifies-section";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <ProgramSection />
       <WhoQualifiesSection />
       <HowItWorksSection />
+      <QualifySection />
       <SiteFooter />
     </main>
   );

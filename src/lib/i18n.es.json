@@ -54,6 +54,22 @@
     "step3Title": "Comienzan las comidas",
     "step3Body": "Una vez aprobadas, las comidas comienzan a llegar a su puerta en un horario de entrega constante."
   },
+  "qualify": {
+    "eyebrow": "Contacto",
+    "titleLine1": "Vea si califica.",
+    "titleLine2": "Nosotros nos encargaremos del resto.",
+    "description": "Cuéntanos un poco sobre ti. Un miembro del equipo de Primemeal se comunicará con usted para confirmar sus datos y guiarlo en los siguientes pasos.",
+    "stepsTitle": "¿Qué pasa después?",
+    "step1": "Envías un mensaje rápido con tus datos.",
+    "step2": "Hacemos un seguimiento para verificar la elegibilidad y coordinar su referencia de SCN.",
+    "step3": "Las comidas comienzan una vez aprobadas: semanalmente, sin costo.",
+    "cardTitle": "Mira si calificas",
+    "cardBody": "Comparta algunos detalles y nuestro equipo verificará su elegibilidad y coordinará su referencia a SCN.",
+    "timeNote": "Solo toma",
+    "timeStrong": "menos de un minuto",
+    "cta": "Iniciar mi solicitud segura y confidencial",
+    "privacy": "Privado y seguro. Solo utilizamos esta información para coordinar su apoyo alimentario."
+  },
   "footer": {
     "description": "Primemeal es un proveedor aprobado que se asocia con Social Care Networks para facilitar comidas a domicilio según la exención de Medicaid 1115 de Nueva York. Primemeal no es un proveedor de SCN.",
     "contact": "Contacto",
