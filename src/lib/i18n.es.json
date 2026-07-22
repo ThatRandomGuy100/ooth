@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "program": "Programa",
+    "whoQualifies": "Quien califica",
+    "howItWorks": "Como funciona",
+    "contact": "Contacto"
+  },
+  "header": {
+    "cta": "Ver si califico"
+  }
+}

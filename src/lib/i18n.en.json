@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "program": "Program",
+    "whoQualifies": "Who qualifies",
+    "howItWorks": "How it works",
+    "contact": "Contact"
+  },
+  "header": {
+    "cta": "See if I qualify"
+  }
+}
