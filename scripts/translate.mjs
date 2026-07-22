@@ -7,7 +7,12 @@ import path from "node:path";
 const TARGET_LANGS = ["es"];
 
 // Key paths copied verbatim into every language (symbols, abbreviations, stats).
-const KEEP_VERBATIM = new Set(["program.stat1Value", "program.stat2Value"]);
+const KEEP_VERBATIM = new Set([
+  "program.stat1Value",
+  "program.stat2Value",
+  "footer.email",
+  "footer.site",
+]);
 
 const dir = path.join(process.cwd(), "src", "lib");
 const en = JSON.parse(readFileSync(path.join(dir, "i18n.en.json"), "utf8"));

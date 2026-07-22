@@ -31,6 +31,41 @@
     "stat2Value": "NY",
     "stat2Label": "Medicaid funded"
   },
+  "whoQualifies": {
+    "eyebrow": "Who qualifies",
+    "title": "Made for New Yorkers who need extra support.",
+    "description": "Medicaid members enrolled in New York's Social Care Network may be eligible for additional temporary services.",
+    "cards": {
+      "card1": "Living with a mental health condition or substance use challenge",
+      "card2": "Living with an intellectual or developmental disability",
+      "card3": "Pregnant or recently had a baby",
+      "card4": "Recently released from incarceration with a chronic health condition",
+      "card5": "Children and young people with health needs (e.g., asthma, diabetes)",
+      "card6": "Frequent visits to the emergency room or hospital",
+      "card7": "Enrolled in a New York State Health Home"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "titleLine1": "Getting started is",
+    "titleLine2": "simple and confidential.",
+    "step1Title": "Reach out",
+    "step1Body": "Send us a quick message with your contact details. There's no phone tag — we'll get back to you.",
+    "step2Title": "Eligibility & referral",
+    "step2Body": "We facilitate the eligibility check, coordinate the SCN screening and referral on your behalf, then handle scheduling, preparation, and delivery logistics end-to-end.",
+    "step3Title": "Meals begin",
+    "step3Body": "Once approved, meals start arriving at your door on a consistent delivery schedule."
+  },
+  "footer": {
+    "description": "Primemeal is an approved vendor partnering with Social Care Networks to facilitate Home-Delivered Meals under New York's 1115 Medicaid Waiver. Primemeal is not an SCN provider.",
+    "contact": "Contact",
+    "email": "hello@primemeal.com",
+    "qualify": "See if you qualify",
+    "voucher": "Voucher",
+    "copyright": "© 2026 Primemeal. All rights reserved.",
+    "adminSignIn": "Sign in as admin",
+    "site": "primemeal.com"
+  },
   "whatsapp": {
     "label": "WhatsApp us"
   }
