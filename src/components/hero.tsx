@@ -14,9 +14,9 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] md:block">
         <Reveal y={0} delay={200} className="h-full w-full">
         <img
-          src="/hero.jpg"
+          src="/what-you-get.jpg"
           alt=""
-          className="h-full w-full object-cover object-top"
+          className="h-full w-full object-cover object-[70%_center]"
         />
         <div className="absolute inset-y-0 left-0 w-56 bg-gradient-to-r from-white via-white/70 to-transparent" />
         <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-white via-white/75 to-transparent" />
