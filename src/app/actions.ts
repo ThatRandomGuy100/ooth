@@ -6,10 +6,16 @@ import { prisma } from "@/lib/prisma";
 
 // All form details are emailed to EMAIL_TO on every submission. The sender
 // must be on a Resend-verified domain — switch EMAIL_FROM to
-// "Primemeal <Info@primecapusa.com>" once that domain's DNS is verified.
-const EMAIL_TO = process.env.EMAIL_TO ?? "Info@primecapusa.com";
+// "PrimeMeals <Info@primecapusa.com>" once that domain's DNS is verified.
+// Comma-separated list — every address receives each submission.
+const EMAIL_TO = (
+  process.env.EMAIL_TO ?? "Info@primecapusa.com,mealcare@renurghealth.com"
+)
+  .split(",")
+  .map((address) => address.trim())
+  .filter(Boolean);
 const EMAIL_FROM =
-  process.env.EMAIL_FROM ?? "Primemeal <info@greatcareathome.com>";
+  process.env.EMAIL_FROM ?? "PrimeMeals <info@greatcareathome.com>";
 
 const NEED_LABELS: Record<string, string> = {
   food: "Food & Nutrition Assistance",

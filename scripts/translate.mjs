@@ -47,7 +47,7 @@ async function translate(text, to) {
     ? translated.charAt(0).toUpperCase() + translated.slice(1)
     : translated;
   // Restore brand-name casing the API tends to mangle.
-  for (const brand of ["WhatsApp", "Medicaid", "Primemeal"]) {
+  for (const brand of ["WhatsApp", "Medicaid", "PrimeMeals"]) {
     out = out.replace(new RegExp(brand, "gi"), brand);
   }
   return out;
