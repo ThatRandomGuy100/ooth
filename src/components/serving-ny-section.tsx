@@ -13,19 +13,18 @@ export function ServingNySection() {
   const [zeroPre, zeroPost] = t.servingNy.titleLine2.split("$0");
 
   return (
-    <section className="group relative flex min-h-[calc(100vh-4rem)] snap-start items-center overflow-hidden [font-family:var(--font-poppins)]">
+    <section className="group relative snap-start overflow-hidden [font-family:var(--font-poppins)]">
       {/* Background street photo — zooms slowly on hover */}
       <div className="absolute inset-0">
         <img
-          src="/serving-ny.jpg"
+          src="/brooklyn-street-CcMJoCCj.jpg"
           alt=""
           className="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-[#0e1322]/45" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(10,14,25,0.55),transparent_72%)]" />
+        <div className="absolute inset-0 bg-[#141927]/60" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-5xl px-4 py-20 text-center sm:px-6 lg:px-8">
+      <div className="relative mx-auto w-full max-w-5xl px-4 py-24 text-center sm:px-6 lg:px-8 lg:py-28">
         <Reveal>
           <p className="text-[12px] font-medium uppercase tracking-[0.25em] text-white/80">
             {t.servingNy.eyebrow}
