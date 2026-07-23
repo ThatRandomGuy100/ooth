@@ -10,17 +10,18 @@ export function Hero() {
 
   return (
     <section className="relative flex min-h-[calc(100vh-4rem)] snap-start items-center overflow-hidden border-b border-slate-200 bg-white [font-family:var(--font-poppins)]">
-      {/* Background photo, anchored right, fading into white on its left and bottom */}
-      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] md:block">
+      {/* Full-bleed background photo: washed to white behind the text on the
+          left, sharp on the right, fading into white at the bottom */}
+      <div className="pointer-events-none absolute inset-0 hidden md:block">
         <Reveal y={0} delay={200} className="h-full w-full">
         <img
           src="/what-you-get.jpg"
           alt=""
-          className="h-full w-full object-cover object-[70%_center]"
+          className="h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-y-0 left-0 w-56 bg-gradient-to-r from-white via-white/70 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-white via-white/75 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white from-15% via-white/75 via-45% to-transparent to-75%" />
+        <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-white via-white/70 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white to-transparent" />
         <div className="absolute inset-0 bg-white/10" />
         </Reveal>
       </div>
