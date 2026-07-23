@@ -21,6 +21,7 @@ model Application {
   phone       String
   dateOfBirth DateTime
   county      String
+  referredBy  String   @default("")
   medicaidId  String
   healthPlan  String
   needs       String[]

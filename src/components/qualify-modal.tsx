@@ -117,6 +117,7 @@ export function QualifyModal({
       phone: String(data.get("phone") ?? ""),
       dateOfBirth: String(data.get("dateOfBirth") ?? ""),
       county: String(data.get("county") ?? ""),
+      referredBy: String(data.get("referredBy") ?? ""),
       medicaidId: String(data.get("medicaidId") ?? ""),
       healthPlan: String(data.get("healthPlan") ?? ""),
       needs: data.getAll("needs").map(String),
@@ -219,6 +220,16 @@ export function QualifyModal({
                           </option>
                         ))}
                       </select>
+                    </div>
+                    <div>
+                      <FieldLabel htmlFor="q-referred">{t.form.referredBy}</FieldLabel>
+                      <input
+                        id="q-referred"
+                        name="referredBy"
+                        required
+                        placeholder={t.form.referredByPlaceholder}
+                        className={inputClass}
+                      />
                     </div>
                   </div>
 

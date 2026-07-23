@@ -46,6 +46,7 @@ async function sendApplicationEmail(input: ApplicationInput) {
     ["Phone number", input.phone],
     ["Date of birth", input.dateOfBirth],
     ["County", input.county],
+    ["Referred by", input.referredBy],
     ["Medicaid ID (CIN)", input.medicaidId],
     ["Health plan", input.healthPlan],
     ["Help needed", input.needs.map((n) => NEED_LABELS[n] ?? n).join(", ")],
@@ -81,6 +82,7 @@ export type ApplicationInput = {
   phone: string;
   dateOfBirth: string;
   county: string;
+  referredBy: string;
   medicaidId: string;
   healthPlan: string;
   needs: string[];
@@ -99,6 +101,7 @@ export async function submitApplication(
     input.phone,
     input.dateOfBirth,
     input.county,
+    input.referredBy,
     input.medicaidId,
     input.healthPlan,
     input.situation,
@@ -122,6 +125,7 @@ export async function submitApplication(
     lastName: input.lastName.trim(),
     email: input.email.trim(),
     phone: input.phone.trim(),
+    referredBy: input.referredBy.trim(),
     medicaidId: input.medicaidId.trim(),
     healthPlan: input.healthPlan.trim(),
     situation: input.situation.trim(),
@@ -136,6 +140,7 @@ export async function submitApplication(
       phone: clean.phone,
       dateOfBirth,
       county: clean.county,
+      referredBy: clean.referredBy,
       medicaidId: clean.medicaidId,
       healthPlan: clean.healthPlan,
       needs: clean.needs,

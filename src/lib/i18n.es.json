@@ -101,6 +101,8 @@
     "dob": "Fecha de nacimiento",
     "county": "Condado",
     "countyPlaceholder": "Seleccione su condado",
+    "referredBy": "Referido por",
+    "referredByPlaceholder": "¿Quién le refirió a nosotros?",
     "sectionMedicaid": "Información de Medicaid",
     "medicaidId": "Identificación de Medicaid (CIN)",
     "medicaidPlaceholder": "AB12345C",

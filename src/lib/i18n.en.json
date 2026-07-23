@@ -101,6 +101,8 @@
     "dob": "Date of birth",
     "county": "County",
     "countyPlaceholder": "Select your county",
+    "referredBy": "Referred by",
+    "referredByPlaceholder": "Who referred you to us?",
     "sectionMedicaid": "Medicaid information",
     "medicaidId": "Medicaid ID (CIN)",
     "medicaidPlaceholder": "AB12345C",
