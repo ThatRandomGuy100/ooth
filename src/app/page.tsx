@@ -2,7 +2,9 @@ import { Hero } from "@/components/hero";
 import { HowItWorksSection } from "@/components/how-it-works-section";
 import { ProgramSection } from "@/components/program-section";
 import { QualifySection } from "@/components/qualify-section";
+import { ServingNySection } from "@/components/serving-ny-section";
 import { SiteFooter } from "@/components/site-footer";
+import { WhatYouGetSection } from "@/components/what-you-get-section";
 import { WhoQualifiesSection } from "@/components/who-qualifies-section";
 
 export default function Home() {
@@ -12,6 +14,8 @@ export default function Home() {
       <ProgramSection />
       <WhoQualifiesSection />
       <HowItWorksSection />
+      <WhatYouGetSection />
+      <ServingNySection />
       <QualifySection />
       <SiteFooter />
     </main>
