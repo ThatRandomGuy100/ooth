@@ -67,6 +67,13 @@
     "step3Title": "Meals begin",
     "step3Body": "Once approved, meals start arriving at your door on a consistent delivery schedule."
   },
+  "servingNy": {
+    "eyebrow": "Serving New York",
+    "titleLine1": "Across New York State.",
+    "titleLine2": "Meals at your door, $0 cost.",
+    "subtitle": "If you're a New York Medicaid member, we'll handle the rest.",
+    "cta": "See if you qualify"
+  },
   "qualify": {
     "eyebrow": "Contact",
     "titleLine1": "See if you qualify.",

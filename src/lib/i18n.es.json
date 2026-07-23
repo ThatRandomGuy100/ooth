@@ -67,6 +67,13 @@
     "step3Title": "Comienzan las comidas",
     "step3Body": "Una vez aprobadas, las comidas comienzan a llegar a su puerta en un horario de entrega constante."
   },
+  "servingNy": {
+    "eyebrow": "Sirviendo a Nueva York",
+    "titleLine1": "En todo el estado de Nueva York.",
+    "titleLine2": "Comidas en tu puerta, costo $0.",
+    "subtitle": "Si es miembro de Medicaid de Nueva York, nosotros nos encargaremos del resto.",
+    "cta": "Mira si calificas"
+  },
   "qualify": {
     "eyebrow": "Contacto",
     "titleLine1": "Vea si califica.",
