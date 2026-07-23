@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { ScrollLink } from "@/components/scroll-link";
 
 import { Logo } from "@/components/logo";
 import { useLanguage } from "@/components/language-provider";
@@ -32,18 +32,18 @@ export function SiteFooter() {
             >
               {t.footer.email}
             </a>
-            <Link
+            <ScrollLink
               href="#qualify"
               className="mt-1 block text-[15px] text-[#55606b] transition-colors hover:text-[#1f2733]"
             >
               {t.footer.qualify}
-            </Link>
-            <Link
+            </ScrollLink>
+            <ScrollLink
               href="#qualify"
               className="mt-4 inline-flex rounded-lg border border-slate-300 bg-white px-4 py-1.5 text-[12px] font-medium uppercase tracking-[0.15em] text-[#1f2733] shadow-sm transition-colors hover:bg-slate-50"
             >
               {t.footer.voucher}
-            </Link>
+            </ScrollLink>
           </div>
         </div>
 

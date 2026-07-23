@@ -4,7 +4,6 @@ import "./globals.css";
 
 import { LanguageProvider } from "@/components/language-provider";
 import { SiteHeader } from "@/components/site-header";
-import { WhatsAppButton } from "@/components/whatsapp-button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +28,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Primemeal",
+  title: "PrimeMealsNY",
   description:
-    "Primemeal — fresh, medically tailored meals delivered to your door.",
+    "PrimeMeals — fresh, medically tailored meals delivered to your door.",
 };
 
 export default function RootLayout({
@@ -48,7 +47,6 @@ export default function RootLayout({
         <LanguageProvider>
           <SiteHeader />
           {children}
-          <WhatsAppButton />
         </LanguageProvider>
       </body>
     </html>

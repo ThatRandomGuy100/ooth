@@ -12,8 +12,8 @@
     "eyebrow": "Red de atención social de Nueva York",
     "titleLine1": "Comidas nutritivas, entregadas.",
     "titleLine2": "Cubierto por Medicaid.",
-    "description": "MealCare by Renurg Health lleva comidas listas para comer y con apoyo médico a las puertas de los neoyorquinos elegibles, sin costo alguno, a través de la Red de Atención Social de Exención de Medicaid 1115 de Nueva York.",
-    "disclaimer": "MealCare no es una red de atención social ni un proveedor de SCN. Operamos como un proveedor aprobado que se encarga de la logística, la preparación y la entrega de comidas en coordinación con los proveedores de SCN.",
+    "description": "PrimeMeals by Renurg Health lleva comidas listas para comer y con apoyo médico a las puertas de los neoyorquinos elegibles, sin costo alguno, a través de la Red de Atención Social de Exención de Medicaid 1115 de Nueva York.",
+    "disclaimer": "PrimeMeals no es una red de atención social ni un proveedor de SCN. Operamos como un proveedor aprobado que se encarga de la logística, la preparación y la entrega de comidas en coordinación con los proveedores de SCN.",
     "ctaPrimary": "Mira si calificas",
     "ctaSecondary": "Ver detalles del programa"
   },
@@ -21,7 +21,7 @@
     "eyebrow": "El programa",
     "titleLine1": "Comida de verdad,",
     "titleLine2": "enviado a casa.",
-    "description": "MealCare entrega comidas nutritivas y listas para comer a los neoyorquinos que califican bajo la exención de Medicaid 1115 del estado, parte de la Red de Atención Social (SCN, por sus siglas en inglés) que conecta a los miembros de Medicaid con apoyo alimentario y nutricional.",
+    "description": "PrimeMeals entrega comidas nutritivas y listas para comer a los neoyorquinos que califican bajo la exención de Medicaid 1115 del estado, parte de la Red de Atención Social (SCN, por sus siglas en inglés) que conecta a los miembros de Medicaid con apoyo alimentario y nutricional.",
     "badgeDeliveries": "Entregas semanales",
     "badgeMeals": "3 comidas los 7 días",
     "stat1Value": "$0",
@@ -58,7 +58,7 @@
     "eyebrow": "Contacto",
     "titleLine1": "Vea si califica.",
     "titleLine2": "Nosotros nos encargaremos del resto.",
-    "description": "Cuéntanos un poco sobre ti. Un miembro del equipo de Primemeal se comunicará con usted para confirmar sus datos y guiarlo en los siguientes pasos.",
+    "description": "Cuéntanos un poco sobre ti. Un miembro del equipo de PrimeMeals se comunicará con usted para confirmar sus datos y guiarlo a través de los siguientes pasos.",
     "stepsTitle": "¿Qué pasa después?",
     "step1": "Envías un mensaje rápido con tus datos.",
     "step2": "Hacemos un seguimiento para verificar la elegibilidad y coordinar su referencia de SCN.",
@@ -72,7 +72,7 @@
   },
   "form": {
     "title": "Mira si calificas",
-    "intro": "Cuéntanos un poco sobre ti. Un miembro del equipo de Primemeal se comunicará con usted para confirmar sus datos y guiarlo en los siguientes pasos.",
+    "intro": "Cuéntanos un poco sobre ti. Un miembro del equipo de PrimeMeals se comunicará con usted para confirmar sus datos y guiarlo a través de los siguientes pasos.",
     "sectionPersonal": "Información personal",
     "firstName": "Nombre de pila",
     "lastName": "Apellido",
@@ -97,7 +97,7 @@
     "sectionAdditional": "Información adicional",
     "situation": "Cuéntanos más sobre tu situación",
     "situationPlaceholder": "Comparta cualquier detalle adicional que nos ayude a comprender sus necesidades...",
-    "consent": "Entiendo que la información que proporciono se utilizará para determinar mi elegibilidad para los servicios de SCN. Doy mi consentimiento para que Primemeal o un proveedor coordinado de SCN me contacte con respecto a mi solicitud.",
+    "consent": "Entiendo que la información que proporciono se utilizará para determinar mi elegibilidad para los servicios de SCN. Doy mi consentimiento para que PrimeMeals o un proveedor coordinado de SCN se comuniquen conmigo con respecto a mi solicitud.",
     "submit": "Enviar solicitud",
     "submitting": "Sumisión…",
     "successTitle": "¡Solicitud recibida!",
@@ -106,16 +106,13 @@
     "close": "Cerca"
   },
   "footer": {
-    "description": "Primemeal es un proveedor aprobado que se asocia con Social Care Networks para facilitar comidas a domicilio según la exención de Medicaid 1115 de Nueva York. Primemeal no es un proveedor de SCN.",
+    "description": "PrimeMeals es un proveedor aprobado que se asocia con Social Care Networks para facilitar comidas a domicilio según la exención de Medicaid 1115 de Nueva York. PrimeMeals no es un proveedor de SCN.",
     "contact": "Contacto",
     "email": "hello@primemeal.com",
     "qualify": "Mira si calificas",
     "voucher": "Vale",
-    "copyright": "© 2026 Primemeal. Reservados todos los derechos.",
+    "copyright": "© 2026 PrimeMeals. Reservados todos los derechos.",
     "adminSignIn": "Iniciar sesión como administrador",
     "site": "primemeal.com"
-  },
-  "whatsapp": {
-    "label": "Envíanos WhatsApp"
   }
 }

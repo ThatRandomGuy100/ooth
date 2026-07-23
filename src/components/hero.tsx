@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { ScrollLink } from "@/components/scroll-link";
 
 import { useLanguage } from "@/components/language-provider";
 import { Reveal } from "@/components/reveal";
@@ -58,18 +58,18 @@ export function Hero() {
             delay={400}
             className="mt-12 flex flex-wrap items-center gap-4"
           >
-            <Link
+            <ScrollLink
               href="#qualify"
               className="rounded-md bg-[#16181d] px-6 py-3.5 text-[15px] font-medium text-white transition-colors hover:bg-black"
             >
               {t.hero.ctaPrimary}
-            </Link>
-            <Link
+            </ScrollLink>
+            <ScrollLink
               href="#program"
               className="rounded-md border border-slate-200 bg-white px-6 py-3.5 text-[15px] font-medium text-[#1f2733] shadow-sm transition-colors hover:bg-slate-50"
             >
               {t.hero.ctaSecondary}
-            </Link>
+            </ScrollLink>
           </Reveal>
         </div>
       </div>

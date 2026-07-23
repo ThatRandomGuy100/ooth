@@ -12,8 +12,8 @@
     "eyebrow": "New York Social Care Network",
     "titleLine1": "Nutritious meals, delivered.",
     "titleLine2": "Covered by Medicaid.",
-    "description": "MealCare by Renurg Health brings ready-to-eat, medically supportive meals to the doors of eligible New Yorkers — at no cost — through New York's 1115 Medicaid Waiver Social Care Network.",
-    "disclaimer": "MealCare is not a Social Care Network or SCN provider. We operate as an approved vendor handling meal logistics, preparation, and delivery in coordination with SCN providers.",
+    "description": "PrimeMeals by Renurg Health brings ready-to-eat, medically supportive meals to the doors of eligible New Yorkers — at no cost — through New York's 1115 Medicaid Waiver Social Care Network.",
+    "disclaimer": "PrimeMeals is not a Social Care Network or SCN provider. We operate as an approved vendor handling meal logistics, preparation, and delivery in coordination with SCN providers.",
     "ctaPrimary": "See if you qualify",
     "ctaSecondary": "View program details"
   },
@@ -21,7 +21,7 @@
     "eyebrow": "The Program",
     "titleLine1": "Real food,",
     "titleLine2": "sent home.",
-    "description": "MealCare delivers nutritious, ready-to-eat meals to New Yorkers who qualify under the state's 1115 Medicaid Waiver — part of the Social Care Network (SCN) connecting Medicaid members to food and nutrition support.",
+    "description": "PrimeMeals delivers nutritious, ready-to-eat meals to New Yorkers who qualify under the state's 1115 Medicaid Waiver — part of the Social Care Network (SCN) connecting Medicaid members to food and nutrition support.",
     "badgeDeliveries": "Weekly deliveries",
     "badgeMeals": "3 meals all 7 days",
     "stat1Value": "$0",
@@ -58,7 +58,7 @@
     "eyebrow": "Contact",
     "titleLine1": "See if you qualify.",
     "titleLine2": "We'll handle the rest.",
-    "description": "Tell us a little about yourself. A member of the Primemeal team will reach out to confirm your details and guide you through the next steps.",
+    "description": "Tell us a little about yourself. A member of the PrimeMeals team will reach out to confirm your details and guide you through the next steps.",
     "stepsTitle": "What happens next",
     "step1": "You send a quick message with your details.",
     "step2": "We follow up to verify eligibility and coordinate your SCN referral.",
@@ -72,7 +72,7 @@
   },
   "form": {
     "title": "See if you qualify",
-    "intro": "Tell us a little about yourself. A member of the Primemeal team will reach out to confirm your details and guide you through the next steps.",
+    "intro": "Tell us a little about yourself. A member of the PrimeMeals team will reach out to confirm your details and guide you through the next steps.",
     "sectionPersonal": "Personal information",
     "firstName": "First name",
     "lastName": "Last name",
@@ -97,7 +97,7 @@
     "sectionAdditional": "Additional information",
     "situation": "Tell us more about your situation",
     "situationPlaceholder": "Share any additional details that would help us understand your needs…",
-    "consent": "I understand that the information I provide will be used to determine my eligibility for SCN services. I consent to being contacted by Primemeal or a coordinated SCN provider regarding my application.",
+    "consent": "I understand that the information I provide will be used to determine my eligibility for SCN services. I consent to being contacted by PrimeMeals or a coordinated SCN provider regarding my application.",
     "submit": "Submit application",
     "submitting": "Submitting…",
     "successTitle": "Application received!",
@@ -106,16 +106,13 @@
     "close": "Close"
   },
   "footer": {
-    "description": "Primemeal is an approved vendor partnering with Social Care Networks to facilitate Home-Delivered Meals under New York's 1115 Medicaid Waiver. Primemeal is not an SCN provider.",
+    "description": "PrimeMeals is an approved vendor partnering with Social Care Networks to facilitate Home-Delivered Meals under New York's 1115 Medicaid Waiver. PrimeMeals is not an SCN provider.",
     "contact": "Contact",
     "email": "hello@primemeal.com",
     "qualify": "See if you qualify",
     "voucher": "Voucher",
-    "copyright": "© 2026 Primemeal. All rights reserved.",
+    "copyright": "© 2026 PrimeMeals. All rights reserved.",
     "adminSignIn": "Sign in as admin",
     "site": "primemeal.com"
-  },
-  "whatsapp": {
-    "label": "WhatsApp us"
   }
 }
