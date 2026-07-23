@@ -43,6 +43,19 @@
       "card7": "Enrolled in a New York State Health Home"
     }
   },
+  "whatYouGet": {
+    "eyebrow": "What you get",
+    "titleLine1": "One service, done well:",
+    "titleLine2": "home-delivered meals.",
+    "card1Title": "Delivered to your home",
+    "card1Body": "Nutritious meals brought directly to your doorstep in New York, on a schedule that works for you.",
+    "card2Title": "No cost through Medicaid",
+    "card2Body": "Fully covered for eligible members through the New York Medicaid SCN program — $0 out of pocket.",
+    "card3Title": "Consistent schedule",
+    "card3Body": "Reliable recurring delivery windows so meals arrive predictably and you can plan with confidence.",
+    "card4Title": "Nutritional balance",
+    "card4Body": "Chef-prepared, ready-to-eat meals designed around balanced nutrition and dietary health needs."
+  },
   "howItWorks": {
     "eyebrow": "How it works",
     "titleLine1": "Getting started is",

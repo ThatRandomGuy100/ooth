@@ -43,6 +43,19 @@
       "card7": "Inscrito en un hogar de salud del estado de Nueva York"
     }
   },
+  "whatYouGet": {
+    "eyebrow": "Lo que obtienes",
+    "titleLine1": "Un servicio, bien hecho:",
+    "titleLine2": "comidas a domicilio.",
+    "card1Title": "Entregado a tu casa",
+    "card1Body": "Comidas nutritivas llevadas directamente a su puerta en Nueva York, en un horario que se adapte a sus necesidades.",
+    "card2Title": "Sin costo a través de Medicaid",
+    "card2Body": "Totalmente cubierto para miembros elegibles a través del programa SCN de Medicaid de Nueva York: $0 de bolsillo.",
+    "card3Title": "Horario consistente",
+    "card3Body": "Plazos de entrega recurrentes y confiables para que las comidas lleguen de manera predecible y pueda planificar con confianza.",
+    "card4Title": "Equilibrio nutricional",
+    "card4Body": "Comidas listas para comer preparadas por chefs y diseñadas en torno a una nutrición equilibrada y necesidades de salud dietética."
+  },
   "howItWorks": {
     "eyebrow": "Como funciona",
     "titleLine1": "Empezar es",
