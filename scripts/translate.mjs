@@ -10,8 +10,7 @@ const TARGET_LANGS = ["es"];
 const KEEP_VERBATIM = new Set([
   "program.stat1Value",
   "program.stat2Value",
-  "footer.email",
-  "footer.site",
+  "footer.phone",
   "form.medicaidPlaceholder",
 ]);
 

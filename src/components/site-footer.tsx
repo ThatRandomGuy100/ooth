@@ -27,10 +27,10 @@ export function SiteFooter() {
               {t.footer.contact}
             </p>
             <a
-              href={`mailto:${t.footer.email}`}
+              href={`tel:${t.footer.phone.replace(/[^+\d]/g, "")}`}
               className="mt-3 block text-[15px] text-[#55606b] transition-colors hover:text-[#1f2733]"
             >
-              {t.footer.email}
+              {t.footer.phone}
             </a>
             <ScrollLink
               href="#qualify"
@@ -47,12 +47,8 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-slate-200 pt-6 text-[14px] text-[#55606b] sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 border-t border-slate-200 pt-6 text-[14px] text-[#55606b]">
           <p>{t.footer.copyright}</p>
-          <div className="flex gap-6">
-            <span>{t.footer.adminSignIn}</span>
-            <span>{t.footer.site}</span>
-          </div>
         </div>
       </div>
     </footer>

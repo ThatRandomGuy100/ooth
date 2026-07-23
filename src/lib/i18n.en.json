@@ -108,11 +108,9 @@
   "footer": {
     "description": "PrimeMeals is an approved vendor partnering with Social Care Networks to facilitate Home-Delivered Meals under New York's 1115 Medicaid Waiver. PrimeMeals is not an SCN provider.",
     "contact": "Contact",
-    "email": "hello@primemeal.com",
+    "phone": "+1 (848) 219-0064",
     "qualify": "See if you qualify",
     "voucher": "Voucher",
-    "copyright": "© 2026 PrimeMeals. All rights reserved.",
-    "adminSignIn": "Sign in as admin",
-    "site": "primemeal.com"
+    "copyright": "© 2026 PrimeMeals. All rights reserved."
   }
 }

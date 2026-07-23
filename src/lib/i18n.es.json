@@ -108,11 +108,9 @@
   "footer": {
     "description": "PrimeMeals es un proveedor aprobado que se asocia con Social Care Networks para facilitar comidas a domicilio según la exención de Medicaid 1115 de Nueva York. PrimeMeals no es un proveedor de SCN.",
     "contact": "Contacto",
-    "email": "hello@primemeal.com",
+    "phone": "+1 (848) 219-0064",
     "qualify": "Mira si calificas",
     "voucher": "Vale",
-    "copyright": "© 2026 PrimeMeals. Reservados todos los derechos.",
-    "adminSignIn": "Iniciar sesión como administrador",
-    "site": "primemeal.com"
+    "copyright": "© 2026 PrimeMeals. Reservados todos los derechos."
   }
 }
